@@ -1,5 +1,6 @@
 # tiyeni-app.github.io
 
+0. Continue - [To Access Tiyeni.App](https://tiyeni-app.github.io/public/)
 
 This is the template for Tiyeni.app (no frameworks) with Tailwind CSS setup. You only need to install Node.js to have access to NPM.
 
