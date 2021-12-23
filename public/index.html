@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Stylesheet 12/22/2021 -->
+  <link href="dist/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Javascript -->
+  <script src="dist/script.js"></script>
+  
+
+</head>
+<body>
+
+  <!-- Header Area 12/22/2021 -->
+   <nav class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-white z-10">
+    <div class="flex items-center">
+      <img src='dist/assets/Logo_black.png' alt="Tiyeni Logo" class="" />
+    </div>
+    <ul class="font-montserrat items-center hidden md:flex">
+      <li class="mx-3 ">
+        <a class="growing-underline" href="howitworks">
+          How it works
+        </a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="features">Home</a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#">Home</a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#">Home</a>
+      </li>
+      <li class="growing-underline mx-3">
+        <a href="#">Home</a>
+      </li>
+    </ul>
+    <div class="font-montserrat hidden md:block">
+      <button class="mr-6">Login</button>
+      <button class="py-2 px-4 text-white bg-amber-500 rounded-3xl">
+        Signup
+      </button>
+    </div>
+    <div id="showMenu" class="md:hidden">
+      <img src='dist/assets/logos/Menu.svg' alt="Menu icon" class="h-16 w-99"/>
+    </div>
+  </nav>
+  <div id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-white z-20 animate-fade-in-down">
+    <div id="hideMenu" class="flex justify-end">
+      <img src='dist/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+    </div>
+    <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
+      <li class="my-6">
+        <a href="howitworks">Menu</a>
+      </li>
+      <li class="my-6">
+        <a href="features">Menu</a>
+      </li>
+      <li class="my-6">
+        <a href="Services">Menu</a>
+      </li>
+      <li class="my-6">
+        <a href="#">Menu</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Header end -->
+
+  
+  <!-- Welcome area Area 12/22/2021 -->
+  <section class="pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center lg:px-48 md:px-12 px-4 bg-secondary">
+    <div class="md:flex-1 md:mr-10">
+      <h1 class="font-pt-serif text-5xl font-bold mb-7">
+        A headline for 
+        <span class="bg-underline1 bg-left-bottom bg-no-repeat pb-2 bg-100%">
+          Tiyeni.App
+        </span>
+      </h1>
+      <p class="font-pt-serif font-normal mb-7">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum
+        tempore consectetur voluptas, cumque nobis laboriosam voluptatem.
+      </p>
+      <div class="font-montserrat">
+        <button class="bg-amber-500 px-6 py-4 border-solid text-black mr-2 mb-2">
+          See more
+        </button>
+        <button class="px-6 py-4 border-2 border-black border-solid">
+          
+        </button>
+      </div>
+    </div>
+    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1">
+      <div class="relative">
+        <img src='dist/assets/Highlight1.svg' alt="" class="absolute -top-16 -left-10" />
+      </div>
+      <img src='dist/assets/presentation/tiyeni-welcome-page.jpg' alt="Macbook" />
+      <div class="relative">
+        <img src='dist/assets/Highlight2.svg' alt="" class="absolute -bottom-10 -right-6" />
+      </div>
+    </div>
+  </section>
+  <!-- Welcome end 12/22/2021 -->
+
+
+  <!-- Services section 12/22/2021 -->
+  <section class="py-12 bg-gray-50">
+    <!-- insert svg later 12/23/2021 -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <h2 class="text-base text-amber-500 font-semibold tracking-wide uppercase">Heading</h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Lorem ipsum dolor sit amet
+        </p>
+        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+        </p>
+      </div>
+  
+      <div class="container mt-10">
+            <!-- content 12/23/2021 -->  
+            <div class="items-center flex flex-wrap">
+              <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <img
+                  alt="..."
+                  class="rounded-lg shadow-lg"
+                  src="dist/assets/presentation/Man Holding iPhone Mockup.jpg"
+                />
+              </div>
+              <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div class="">
+                  <h3 class="text-3xl font-semibold leading-8 tracking-tight text-gray-900">Lorem Ipsum Lorem</h3>
+                  <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quas officia dolore asperiores facere sequi fugit soluta
+                     dolores eos rerum accusamus voluptatem corrupti eaque esse 
+                     est perferendis, perspiciatis, labore atque ut?
+                  </p>
+                  <ul class="list-none mt-6">
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span
+                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-amber-500 mr-3"
+                            ><i class="fas fa-fingerprint"></i
+                          ></span>
+                        </div>
+                        <div>
+                          <h4 class="text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          </h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span
+                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-amber-500 mr-3"
+                            ><i class="fab fa-html5"></i
+                          ></span>
+                        </div>
+                        <div>
+                          <h4 class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span
+                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-amber-500 mr-3"
+                            ><i class="far fa-paper-plane"></i
+                          ></span>
+                        </div>
+                        <div>
+                          <h4 class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="py-2">
+                      <div class="flex items-center">
+                        <div>
+                          <span
+                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-amber-500 mr-3"
+                            ><i class="far fa-paper-plane"></i
+                          ></span>
+                        </div>
+                        <div>
+                          <h4 class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- content end -->     
+      </div>
+    </div>
+  </section>
+  <!-- end -->
+
+
+
+
+  <!-- Section 12/22/2021 -->
+  <section class="bg-gray-50">
+    <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        
+        content
+
+    </div>
+  </section>
+  <!-- end -->
+
+  <!-- Call To Action 12/22/2021 -->
+    <section class="bg-white">
+        <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span class="block">Download Our App &</span>
+                <span class="block text-amber-500">lorem ipsum lorem isum.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-white bg-amber-500 hover:bg-amber-400">
+                  <i class="fab fa-app-store fa-2x mr-1"></i>  
+                  App Store
+                </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium text-amber-500 bg-white hover:bg-amber-50">
+                  <i class="fab fa-google-play fa-2x mr-1"></i>
+                  Google Play
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA end -->
+  
+  <!-- footer 12/22/2021 -->
+  <footer class="bg-gray-900 text-gray-300">
+      <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:py-8 lg:px-2 lg:flex lg:items-top">
+        
+       <div class="py-10 px-8">
+            <h3 class="text-sm font-medium text-amber-500">Helpful Links</h3>
+  
+            <div class="mt-4 ml-2">
+                <ul role="list" class="list-outside list-none text-sm space-y-2 ...">
+                    <li> About us</li>
+                    <li> Features</li>
+                    <li> FAQ's</li>
+                    <!-- ... -->
+                </ul>
+            </div>
+       </div>
+
+       <div class="py-10 px-8">
+        <h2 class="text-sm font-medium text-amber-500">Support</h2>
+
+        <div class="mt-4 ml-2">
+            <ul role="list" class="list-outside list-none text-sm space-y-2 ...">
+                <li>Privacy Policy</li>
+                <li>Terms of Use</li>
+                <li>Support Center</li>
+                <li>Contact</li>
+                <!-- ... -->
+            </ul>
+        </div>
+       </div>
+
+       <div class="py-10 px-8">
+        <h2 class="text-sm font-medium text-amber-500">Contact us</h2>
+
+        <div class="mt-4 ml-2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <p>265 999 999 9999</p>
+            <a href="http://info@tiyeni.app">info@tiyeni.app</a>
+            <!--<ul role="list" class="list-outside list-none text-sm space-y-2 ...">
+                <li>5 cups chopped Porcini mushrooms</li>
+                - ... --
+            </ul>-->
+        </div>
+       </div>
+
+      </div>    
+  </footer>
+  <!-- footer end -->
+</body>
+</html>
