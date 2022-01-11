@@ -783,6 +783,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
 }
@@ -1137,6 +1142,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 5rem;
   }
 
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .sm\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .sm\:pt-48 {
+    padding-top: 12rem;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1276,6 +1293,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .md\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .md\:pt-80 {
+    padding-top: 20rem;
   }
 
   .md\:text-left {
