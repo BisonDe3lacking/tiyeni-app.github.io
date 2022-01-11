@@ -968,7 +968,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
+
+.bg-gray-900 {
+  main
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
@@ -1021,13 +1023,6 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: center;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
-}
 
 .p-2 {
   padding: 0.5rem;
