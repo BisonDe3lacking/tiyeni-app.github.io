@@ -1,0 +1,37 @@
+<!-- Welcome area Area 12/22/2021 -->
+   <section class="bg-gray-20 pt-24 md:mt-0 md:h-screen flex flex-col justify-center text-center md:text-left md:flex-row md:justify-between md:items-center md:px-12 px-4 bg-secondary">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font mb-4 text-3xl font-bold leading-tight text-gray-900 sm:text-3xl md:text-4xl md:leading-none tracking-none md:tracking-tight">A headline for 
+              <br class="hidden lg:inline-block">tiyeni.app website
+            </h1>
+            <p class="mb-10 text-lg font-light text-gray-500 md:text-xl md:tracking-relaxed md:mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum
+              tempore consectetur voluptas, cumque nobis laboriosam voluptatem.</p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white border-0 focus:outline-none hover:bg-indigo-600 rounded text-lg bg-amber-500 px-6 py-4 border-solid mr-2 mb-2">
+                See more
+              </button>
+              <a class="inline-flex items-center px-4 py-2 mt-2 font-medium text-amber-500 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-4 hover:underline"
+              href="/">
+              <span class="justify-center uppercase">Tiyeni</span>
+              <svg class="w-3 h-3 fill-current text-gray-900 flex ml-2 -mr-1"
+                viewBox="0 0 12 12"
+                xmlns="http://www.w3.org/2000/svg"   >
+                <path
+                  d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
+                  fillRule="nonzero"
+                />
+              </svg>
+            </a>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+          </div>
+        </div>
+      </section>        
+    </div>
+  </section>
+  <!-- Welcome end 12/22/2021 -->
