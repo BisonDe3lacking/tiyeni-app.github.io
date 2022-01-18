@@ -11,124 +11,169 @@
   <!-- Javascript -->
   <!-- <script src="dist/script.js"></script> -->
   <script async="" defer="" data-website-id="748b20ba-4a3f-45ee-823a-71282c1df8a3" src="https://stats.andreuzza.com/umami.js"></script>
+  <script src="dist/script.js"></script>
   <title>Tiyeni | Fast & Affordable Rides</title>
-  <style>
-    .hide-scroll-bar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    .hide-scroll-bar::-webkit-scrollbar {
-      display: none;
-    }
-    </style>
-
+ 
 </head>
 <body>
-  <!-- Navigation Items update 1/11/2022 -->
-  <div class="fixed bg-white top-0 w-full z-30 clearNav md:bg-opacity-90 transition duration-300 ease-in-out">
-    <div class="flex flex-col max-w-6xl py-2 px-0 mx-auto md:items-center md:justify-between md:flex-row md:px-0 lg:px-0">
-      <div class="flex flex-row items-center justify-between">
-        <a href="/" class="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline">
-          <img  class="text-4xl Avenir tracking-tighter text-gray-900 md:text-4x1 lg:text-3xl" src='dist/assets/Logo_black.png' alt="tiyeni.logo" class="" />
-        </a>
-      </div>
-      <div class="md:flex flex-grow items-center">
-        <nav class="flex-col flex-grow ">
-          <ul class="flex flex-grow justify-end flex-wrap items-center">
-            <li>
-              <a href="/" class="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
-                Fleet
-              </a>
-            </li>
-            <li>
-              <a href="/" class="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
-                Business
-              </a>
-            </li>
-            <li>
-              <a href="/" class="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">
-                Rider
-              </a>
-            </li>
+
+  <!-- Header & Welcome section 1/12/2022 -->
+<div class="relative bg-white overflow-hidden h-full" style="background-image: url('./dist/assets/presentation/WallpaperDog-5485783.jpg');">
+  <div class="max-w-7xl mx-auto">
+    <div class="z-10 pb-8 sm:pb-16 md:pb-5 xl:max-w-7xl lg:w-full lg:pb-12 xl:pb-16">    
+
+          <!-- navigation -->
+                <nav class="w-full mx-auto mt-10 mb-20 top-0 flex flex-grow justify-between py-2 lg:px-24 md:px-2 px-1 items-center content-center z-30">
+                  <div class="flex flex-row items-left ">
+                    <a
+                      href="/"
+                      class="text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
+                    >
+                    <img src='dist/assets/Logo_black.png' alt="" class="h-19 w-40" />
+                    </a>
+                  </div>
+
+                  <ul class=" items-right font-medium text-white hidden md:flex">
+                    <li class="mx-1 hover:text-amber-500 hover:border border-amber-500 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                      <a class="" href="howitworks">
+                        Home
+                      </a>
+                    </li>
+                    <li class="mx-1 hover:text-amber-500 hover:border border-amber-500 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                      <a href="#booking">Booking</a>
+                    </li>
+                    <li class="mx-1 hover:text-amber-500 hover:border border-amber-500 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                      <a href="#about">About us</a>
+                    </li>
+                    <li class="mx-1 hover:text-amber-500 hover:border border-amber-500 px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                      <a href="contact">Contact</a>
+                    </li>
+                    <Button class="mx-1 hover:text-white bg-amber-500 hover:border border-white rounded-md px-5 py-3 flex items-center transition duration-150 ease-in-out">
+                      Login
+                    </Button>
+                  </ul>
+                  <div id="showMenu" class="md:hidden">
+                    <img src='dist/assets/logos/Menu.svg' alt="Menu icon" class="h-16 w-99"/>
+                  </div>
+                </nav>
+                <div id='mobileNav' class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-white z-20 animate-fade-in-down">
+                  <div id="hideMenu" class="flex justify-end">
+                    <img src='dist/assets/logos/Cross.svg' alt="" class="h-16 w-16" />
+                  </div>
+                  <ul class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl">
+                    <li class="my-6">
+                      <a href="#Home">Home</a>
+                    </li>
+                    <li class="my-6">
+                      <a href="#booking">Booking</a>
+                    </li>
+                    <li class="my-6">
+                      <a href="#about">About us</a>
+                    </li>
+                    <li class="my-6">
+                      <a href="#login">Login</a>
+                    </li>
+                  </ul>
+                </div>
+          <!-- nav end -->
+
+        <div class="flex md:w-full max-w-6xl mx-auto px-5 py-1 md:flex-row flex-col items-center mb-20">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="text-4xl tracking-relaxed font-extrabold text-white sm:text-5xl md:text-6xl">
+              <span class="block mb-5 xl:inline">Welcome to</span>
+              <span class="block mb-5 text-white xl:inline">Tiyeni<span class="text-amber-500">.app</span></span>
+              <p class="ext-lg p-3 font-bold text-amber-500 md:text-xl md:tracking-relaxed md:mb-4">Tikafika Osaopa!</p>
+            </h1>
             
-            <li>
-              <a
-                href="/"
-                class="font-medium text-gray-900 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out"
-              >
-              | login
-                <svg
-                  class="w-3 h-3 fill-current text-gray-900 flex ml-2 -mr-1"
-                  viewBox="0 0 12 12"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                    fillRule="nonzero"
-                  />
+            
+            <p class="text-sm mt-2 text-white mb-8 w-full underline">Download the app for exclusive deals and ease of booking.</p>
+            <div class="flex lg:flex-row md:flex-col">
+              <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+                  <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
                 </svg>
-              </a>
-            </li>
-            </li>
-          </ul>
-        </nav>
-      </div>
+                <span class="ml-4 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+                  <span class="title-font font-medium">Google Play</span>
+                </span>
+              </button>
+              <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+                  <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
+                  <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
+                </svg>
+                <span class="ml-4 flex items-start flex-col leading-none">
+                  <span class="text-xs text-gray-600 mb-1">Download on the</span>
+                  <span class="title-font font-medium">App Store</span>
+                </span>
+              </button>
+            </div>
+          </div>
+            <div class="lg:w-2/6 md:w-1/2 bg-amber-500 bg-opacity-50 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+              <div class="relative mb-4">
+                <input type="text" id="full-name" name="location" placeholder="Enter pickup location" class="w-full bg-white rounded border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <div class="relative mb-4">
+                <input type="email" id="email" name="destination" placeholder="Enter destination" class="w-full bg-white rounded border border-gray-300 focus:border-amber-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+              <button class="text-white bg-gray-900 border-0 py-2 px-8 focus:outline-none hover:bg-white hover:text-gray-900 rounded text-lg">Book now</button>
+              <p class="text-xs text-white mt-3">Schedule your ride.</p>
+            </div>
+        </div>
+      
+
     </div>
   </div>
-  <!-- end -->
+  <!-- <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="">
+  </div> -->
+</div>
 
-  <!-- Welcome/Header Area update --> 
-  
-  <section class="bg-white sm:pt-20 md:pt-2">
-    <div class="container sm:w-full lg:max-w-7xl mx-auto py-24 px-0 sm:px-6 lg:py-24 lg:px-8 md:px-0 lg:flex lg:items-center lg:justify-between">
 
-    <section class="w-full relative px-10 md:p-0 transform duration-500 hover:shadow-1xl cursor-pointer hover:-translate-y-1 ">
-        <img class="xl:w-full sm:h-2/4" src="./dist/assets/presentation/WallpaperDog-5485783.jpg" alt="">
-        <div class="content bg-white p-2 pt-8 md:p-12 pb-12 lg:max-w-lg w-full lg:absolute top-48 right-5">
-            <h2 class="text-3xl font-bold mt-4 md:mt-10">Welcome to Tiyeni.<span class="text-amber-500">app</span></h2>
-            <p class="my-3 text-justify font-medium text-gray-700 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aperiam nulla cupiditate saepe sed quis veritatis minus rem adipisci aliquid.</p>
-            <button class="mt-2 md:mt-5 p-3 px-5 bg-amber-500 text-white font-bold text-sm hover:bg-purple-800">Learn More</button>
-        </div>
-    </section>
- 
-  </div>
-  </section>
-  <!-- end -->
 
-  <!-- Section 01/10/2021 -->
+
+
+  <!-- About ut section 01/10/2021 -->
   <section class="bg-white">
-    <div class="container max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">        
+    <div class="container max-w-7xl mx-auto py-12 px-4 sm:px-4 lg:py-16 lg:px-6 lg:flex lg:items-center lg:justify-between">        
         <!--  -->
-            <div class="flex flex-wrap -m-4">
-              <div class="p-1 lg:w-1/3">
-                <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
-                  <!-- mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto -->
-                  <h1 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">Get a ride</h1>
-                  <p class="ext-lg font-light text-gray-500 md:text-xl md:tracking-relaxed md:mb-4">Tiyeni offers you a ride in minutes.</p>
+          <div class="container px-0 py-0 mx-auto">
+            <div class="flex flex-col text-center w-full mb-10">
+              <h1 class="sm:text-4xl text-4xl font-extrabold mb-4 text-gray-900 uppercase">our services</h1>
+              <p class="text-sm text-amber-500 tracking-widest font-semibold title-font mb-1">Trusted taxi services in Malawi.</p>
+            </div>
+            <div class="flex flex-wrap">
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-gray-200 border-opacity-60">
+                <h2 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">Rapid Travelling</h2>
+                <p class="ext-lg font-light text-gray-500 md:text-sm md:tracking-relaxed md:mb-4">We will bring you quickly and comfortably to anywhere in your city.</p>
+               
+              </div>
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                <h2 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">Airport Transfer</h2>
+                <p class="ext-lg font-light text-gray-500 md:text-sm md:tracking-relaxed md:mb-4">If you need a comfortable
+                  hotel, our operators will book it for you, and take a taxi to the address</p>
                 
-                </div>
               </div>
-              <div class="p-1 lg:w-1/3">
-                <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
-                  <h1 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">The best prices</h1>
-                  <p class="ext-lg font-light text-gray-500 md:text-xl md:tracking-relaxed md:mb-4">We aim to offer the best ride prices in every city. See for yourself!</p>
-                  
-                </div>
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                <h2 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">Booking Hotel</h2>
+                <p class="ext-lg font-light text-gray-500 md:text-sm md:tracking-relaxed md:mb-4">We will bring you quickly 
+                  and comfortably to anywhere in your city.</p>
+               
               </div>
-              <div class="p-1 lg:w-1/3">
-                <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden relative">
-                  <h1 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">Easy to use</h1>
-                  <p class="ext-lg font-light text-gray-500 md:text-xl md:tracking-relaxed md:mb-4">Get wherever you need to go as quickly as possible.</p>
-                  
-                </div>
+              <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+                <h2 class="title-font sm:text-3xl text-3xl font-bold text-gray-900 mb-3">Baggage Transport</h2>
+                <p class="ext-lg font-light text-gray-500 md:text-sm md:tracking-relaxed md:mb-4">We will bring you quickly and comfortably to anywhere in your city.</p>
+               
               </div>
             </div>
+            <button class="flex mx-auto mt-16 text-white bg-amber-500 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 hover:text-amber-500 rounded-md text-lg">See more</button>
+          </div>
         <!--  -->
     </div>
   </section>
-  <!-- end -->
+  <!-- about us section end -->
 
-  <!-- Product area 1/11/2022 -->
+  <!-- Product diplay area 1/11/2022 -->
    <section class="bg-blue-50">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
       <!--  -->
@@ -150,7 +195,7 @@
       <!--  -->
     </div>
   </section>
-  <!-- end --> 
+  <!-- product display area end --> 
 
 
   <!-- Services section 12/22/2021 -->
@@ -257,7 +302,7 @@
 
     <!-- CTA end -->
   <!-- Footer edited 1/11/2022 -->
-  <footer class="px-4 py-12 mx-auto max-w-7xl">
+  <footer class="mt-10 px-4 py-12 mx-auto max-w-7xl">
     <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-11 lg:gap-20">
       <div class="col-span-3">
         <a href="#" title="Hellonext Home Page" class="flex items-center">
